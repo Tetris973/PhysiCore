@@ -1,7 +1,7 @@
 {
-  "name": "physicore",
+  "name": "p5-sketch-editor",
   "version": "1.0.0",
-  "description": "A Simulation Engine for Physics Simulation",
+  "description": "A sketch editor for p5.js",
   "main": "./src/index.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js --env.watchV='false'",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tetris973/PhysiCore.git"
+    "url": "git+https://github.com/Tetris973/p5-sketch-editor.git"
   },
   "keywords": [
     "simulation",
@@ -20,7 +20,7 @@
   ],
   "author": "Tetris973",
   "license": "MIT",
-  "homepage": "https://github.com/Tetris973/PhysiCore.git#readme",
+  "homepage": "https://github.com/Tetris973/p5-sketch-editor.git#readme",
   "devDependencies": {
     "jsdoc": "^3.6.5",
     "webpack": "^4.43.0",

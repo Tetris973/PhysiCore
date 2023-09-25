@@ -8,9 +8,9 @@ module.exports = env => ({
     },
     output : {
         path          :  path.resolve(__dirname, 'dist'),
-        filename      : 'physicore.min.js',
+        filename      : 'p5-sketch-editor.min.js',
         libraryTarget : 'umd',
-        library       : 'physicore',
+        library       : 'p5-sketch-editor',
         publicPath    : '/'
     },
     devServer: {
