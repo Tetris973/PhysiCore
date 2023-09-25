@@ -22,8 +22,11 @@ class pSimulator {
     }
 
 
-    /** Instanciate the pSimulator */
-    instanciate() {
+    /** 
+     * Instanciate the pSimulator 
+     * @param {Function} runSimulatorCallback - The callback function to run the simulator.
+     */
+    instanciate(runSimulatorCallback) {
         try {
             window.preRunSimulator(this); // premain function
         } catch(e) {} // not found
@@ -40,7 +43,11 @@ class pSimulator {
 
         this.mousePos = this.plotter.computeForXYFromPixel(mouseX, mouseY);
 
-        window.runSimulator(this); // main function
+        if (typeof runSimulatorCallback === 'function') {
+            runSimulatorCallback(this);
+        } else {
+            console.error('The runSimulator callback function is not provided or is not a function.');
+        }
     }
 
 
