@@ -1,15 +1,16 @@
 const path = require('path');
 
 module.exports = env => ({
+    mode   : env.modeV == 'dev' ? 'development' : 'production',
     target : 'web',
     entry  : {
-        app : [ './src/app.js' ]
+        app : [ './src/index.js' ]
     },
     output : {
         path          :  path.resolve(__dirname, 'dist'),
-        filename      : 'pSEngine.min.js',
-        libraryTarget : 'var',
-        library       : 'pSEngine',
+        filename      : 'physicore.min.js',
+        libraryTarget : 'umd',
+        library       : 'physicore',
         publicPath    : '/'
     },
     devServer: {

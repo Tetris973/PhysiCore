@@ -1,4 +1,4 @@
-import './../utilities/Vector';
+import Vector from '../utilities/Vector';
 
 class pSPlotter {
     /**
